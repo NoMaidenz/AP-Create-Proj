@@ -27,6 +27,35 @@ const alphabet = [
   "z",
 ];
 
+const alphabet2 = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+];
+
 const form = document.forms[0];
 const output = document.getElementById("output");
 
@@ -36,16 +65,6 @@ form.addEventListener("submit", (event) => {
     .map((char) => encrypt(char))
     .join("");
 });
-function decrypt() {
-  const shift = -Number(form.shift.value); //
-  if (alphabet.includes(char.toLowerCase())) {
-    const position = alphabet.indexOf(char);
-    const OldPosition = (position + shift) % 26;
-    return alphabet[OldPosition];
-  } else {
-    return char;
-  }
-}
 
 function encrypt(char) {
   const shift = Number(form.shift.value);
@@ -53,6 +72,10 @@ function encrypt(char) {
     const position = alphabet.indexOf(char);
     const newPosition = (position + shift) % 26;
     return alphabet[newPosition];
+  } else if (alphabet2.includes(char.toUpperCase())) {
+    const position = alphabet2.indexOf(char);
+    const newPosition = (position + shift) % 26;
+    return alphabet2[newPosition];
   } else {
     return char;
   }
