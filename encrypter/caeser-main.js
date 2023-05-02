@@ -81,4 +81,4 @@ function encrypt(char) {
   }
 }
 
-// I learned how to write the ceaser cipher code using sources such as https://dev.to/cerchie/writing-a-caesar-shift-cipher-function-with-javascript-27eh and https://www.sitepoint.com/how-to-build-a-cipher-machine-with-javascript/ and https://blog.stranianelli.com/how-to-code-a-caesar-cipher-in-javascript/ as well as https://learnersbucket.com/examples/algorithms/caesar-cipher-in-javascript/ .
+// I learned how to write the ceaser cipher code using sources such as https://dev.to/cerchie/writing-a-caesar-shift-cipher-function-with-javascript-27eh and https://blog.stranianelli.com/how-to-code-a-caesar-cipher-in-javascript/ as well as https://learnersbucket.com/examples/algorithms/caesar-cipher-in-javascript/ .
